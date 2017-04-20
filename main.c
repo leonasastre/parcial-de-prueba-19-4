@@ -11,10 +11,31 @@ int main()
     int opcMenu;
     int auxiliar;
     int i=0;
-    numdni[i]=dni();
-    i=i+1;
 
     opcMenu=menu();
+    switch(opcMenu)
+    {
+    case 1:
+        printf("\n Tramite Urgente.");
+        numdni[i]=dni();
+        i=i+1;
+        break;
+        case 2:
+        printf("\n Tramite Regular.");
+        numdni[i]=dni();
+        i=i+1;
+        break;
+         case 3:
+        printf("\n Proximo cliente.");
+        numdni[i]=dni();
+        i=i+1;
+        break;
+         case 4:
+        printf("\n .");
+        numdni[i]=dni();
+        i=i+1;
+        break;
+    }
 
 }
 
@@ -37,6 +58,7 @@ int menu()
     printf("\n ingrese informar 5");
     printf("\n");
     scanf("%d",&opciones);
+    return opciones;
 
 
 }
